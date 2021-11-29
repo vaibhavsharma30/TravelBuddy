@@ -19,11 +19,14 @@
         />
     
         <!-- custom css file link  -->
-        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
       </head>
      
 <body>
     <!-- header section starts  -->
+    <?php
+    ;
+    ?>
 
     <header>
       <div id="menu-bar" class="fas fa-bars"></div>
@@ -32,10 +35,10 @@
 
       <nav class="navbar">
         <a href="#home">Home</a>
-        <a href="book.html">Book</a>
+        <a href="../book.php/">Book</a>
         <a href="#packages">Packages</a>
         <a href="#services">Services</a>
-        <a href="feedback.html">Feedback/Review</a>
+        <a href="../feedback.php/">Feedback/Review</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -44,11 +47,13 @@
         <i class="fas fa-grip-lines-vertical"></i>
         
         <i class="fas fa-user" id="login-btn"> &nbsp Login</i>
+        
       </div>
 
-      <form action="" class="search-bar-container">
+      <form action="../ret.php" method="POST" class="search-bar-container">
         <input type="search" id="search-bar" placeholder="search here..." />
-        <label for="search-bar" class="fas fa-search"></label>
+        <button style="background-color:#333;" name="search"><label for="search-bar" class="fas fa-search" name="search"></label></button>
+        
       </form>
     </header>
     <!-- header section ends -->
@@ -58,18 +63,18 @@
     <div class="login-form-container">
       <i class="fas fa-times" id="form-close"></i>
 
-      <form action="">
+      <form action="../login/homee.php/" method="POST">
         <h3>login</h3>
-        <input type="email" class="box" placeholder="enter your email" />
-        <input type="password" class="box" placeholder="enter your password" />
-        <input type="submit" value="login now" class="btn" />
-        <input type="checkbox" id="remember" />
-        <label for="remember">remember me</label>
+        <input type="text" class="box" placeholder="Username" name="uname" />
+        <input type="password" class="box" placeholder="enter your password" name="pass"/>
+        <input type="submit" value="login now" class="btn" name="submit"/>
+        
+        
         <p>forget password? <a href="#">click here</a></p>
-        <p>don't have and account? <a href="#">register now</a></p>
+        <p>don't have and account? <a href="../login/signup.php"><i class="fas fa-user-plus" id="signup-btn"> &nbsp register now</i></a></p>
       </form>
     </div>
-
+  
      
     
 
@@ -138,7 +143,7 @@
               <i class="far fa-star"></i>
             </div>
             <div class="price">&#8377 5000.00 <span>&#8377 6000.00</span></div>
-            <a href="#" class="btn">book now</a>
+            <a href="../login/homee.php/" class="btn" name="submit" >book now</a>
           </div>
         </div>
 
@@ -158,7 +163,7 @@
               <i class="far fa-star"></i>
             </div>
             <div class="price">&#8377 3000.00 <span>&#8377 5000.00</span></div>
-            <a href="#" class="btn">book now</a>
+            <a href="../login/homee.php/" class="btn" name="submit" >book now</a>
           </div>
         </div>
 
@@ -178,7 +183,7 @@
               <i class="far fa-star"></i>
             </div>
             <div class="price">&#8377 2000.00 <span>&#8377 3000.00</span></div>
-            <a href="#" class="btn">book now</a>
+            <a href="../login/homee.php/" class="btn" name="submit" >book now</a>
           </div>
         </div>
 
@@ -198,7 +203,7 @@
               <i class="far fa-star"></i>
             </div>
             <div class="price">&#8377 2000.00 <span>&#8377 3000.00</span></div>
-            <a href="#" class="btn">book now</a>
+            <a href="../login/homee.php/" class="btn" name="submit" >book now</a>
           </div>
         </div>
 
@@ -218,7 +223,7 @@
               <i class="far fa-star"></i>
             </div>
             <div class="price">&#8377 5000.00 <span>&#8377 5500.00</span></div>
-            <a href="#" class="btn">book now</a>
+            <a href="../login/homee.php/" class="btn" name="submit" >book now</a>
           </div>
         </div>
 
@@ -238,7 +243,7 @@
               <i class="far fa-star"></i>
             </div>
             <div class="price">&#8377 3000.00 <span>&#8377 4000.00</span></div>
-            <a href="#" class="btn">book now</a>
+            <a href="../login/homee.php/" class="btn" name="submit" >book now</a>
           </div>
         </div>
       </div>
@@ -263,7 +268,7 @@
       <div class="box-container">
         <div class="box">
           <i class="fas fa-hotel"></i>
-          <a href="hotels.html"><h3>Best hotels</h3></a>
+          <a href="../hotels.php/"><h3>Best hotels</h3></a>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
             commodi earum, quis voluptate exercitationem ut minima itaque iusto
@@ -369,7 +374,7 @@
 
     <section class="footer">
       <div class="box-container">
-        <div class="box">
+        <div class="box" >
           <h3>about us</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
@@ -379,20 +384,12 @@
         </div>
         <div class="box">
           <h3>branch locations</h3>
-          <a href="#">india</a>
-          <a href="#">USA</a>
-          <a href="#">japan</a>
-          <a href="#">france</a>
+          <a href="#">Mathura</a>
+          <a href="#">Dehradun</a>
+          <a href="#">Delhi</a>
+          <a href="#">Mumbai</a>
         </div>
-        <div class="box">
-          <h3>quick links</h3>
-          <a href="#home">Home</a>
-        <a href="book.html">Book</a>
-        <a href="#packages">Packages</a>
-        <a href="#services">Services</a>
-        <a href="feedback.html">Feedback/Review</a>
-        <a href="#contact">Contact</a>
-        </div>
+        
         <div class="box">
           <h3>follow us</h3>
           <a href="#">facebook</a>
@@ -413,6 +410,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
-    <script src="../script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

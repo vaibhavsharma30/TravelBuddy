@@ -18,9 +18,12 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <?php
+    ;
+    ?>
     <section>
       <!-- header section starts  -->
 
@@ -33,12 +36,12 @@
         >
 
         <nav class="navbar">
-          <a href="index.html">Home</a>
-          <a href="book.html">Book</a>
-          <a href="index.html#packages">Packages</a>
-          <a href="index.html#services">Services</a>
-          <a href="feedback.html">Feedback/Review</a>
-          <a href="index.html#contact">Contact</a>
+          <a href="../index.php/">Home</a>
+          <a href="../book.php/">Book</a>
+          <a href="../index.php/#packages">Packages</a>
+          <a href="../index.php/#services">Services</a>
+          <a href="../feedback.php/">Feedback/Review</a>
+          <a href="../index.php/#contact">Contact</a>
         </nav>
 
         <div class="icons">

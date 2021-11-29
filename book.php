@@ -17,9 +17,13 @@
     />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <?php
+    ;
+    ?>
+  
     <section>
       <!-- header section starts  -->
 
@@ -27,17 +31,16 @@
         <div id="menu-bar" class="fas fa-bars"></div>
 
         <a href="#" class="logo"
-          ><span>T</span><small>ravel</small><span>B</span
-          ><small>uddy</small></a
+          ><span>T</span><small>ravel</small><span>B</span><small>uddy</small></a
         >
 
         <nav class="navbar">
-          <a href="index.html">Home</a>
+          <a href="../index.php/">Home</a>
           <a href="#book">Book</a>
-          <a href="index.html#packages">Packages</a>
-          <a href="index.html#services">Services</a>
-          <a href="feedback.html">Feedback/Review</a>
-          <a href="index.html#contact">Contact</a>
+          <a href="../index.php/#packages">Packages</a>
+          <a href="../index.php/#services">Services</a>
+          <a href="../feedback.php/">Feedback/Review</a>
+          <a href="../index.php/#contact">Contact</a>
         </nav>
 
         <div class="icons">
@@ -95,28 +98,37 @@
           <img src="../images/book-img.svg" alt="" />
         </div>
 
-        <form action="">
+        <form action="../email/mail.php" method="POST">
+        <div class="inputBox">
+            <h3>Name</h3>
+            <input type="text" placeholder=" Name" name="name" />
+          </div>
+          <div class="inputBox">
+            <h3>Email</h3>
+            <input type="text" placeholder="Email"  name="email" />
+          </div>
           <div class="inputBox">
             <h3>where to</h3>
-            <input type="text" placeholder="place name" />
+            <input type="text" placeholder="place name" name="destination" />
           </div>
           <div class="inputBox">
             <h3>how many</h3>
-            <input type="number" placeholder="number of guests" />
+            <input type="number" placeholder="number of guests" name="numb" />
           </div>
           <div class="inputBox">
             <h3>arrivals</h3>
-            <input type="date" />
+            <input type="date" name="date"/>
           </div>
-          <div class="inputBox">
-            <h3>leaving</h3>
-            <input type="date" />
-          </div>
+          
           <input type="submit" class="btn" value="book now" />
         </form>
       </div>
     </section>
 
     <!-- book section ends -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../script.js"></script>
   </body>
 </html>
