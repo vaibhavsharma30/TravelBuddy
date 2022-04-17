@@ -5,8 +5,10 @@
 
 session_start();
 if(isset($_SESSION['uname'])){
+
     //echo " <h1> Welcome,".$_SESSION['uname']."</h1>";
     if(isset($_POST['submit'])){
+        
         echo"<script>alert('already Logged in')</script>";
         echo "<script> location.href ='../../index.php/'</script>";
     //header("location:../../index.php/");
@@ -40,7 +42,7 @@ else{
                         $_SESSION['uname']= $uname;
                         echo "<h1 style=  margin-left:550px;>Login Successfull! </h1><br>";
                         //header("location:../index.php/");
-                        header("refresh:3;url=../../index.php/#packages");
+                        header("refresh:3;url=../../index.php/");
                     }
                     else{
                         echo"<script>alert('Username & Password missmatch ')</script>";
@@ -64,7 +66,7 @@ else{
             //    </script>';
             echo "<h1 style=  margin-left:530px;>Please Login First! </h1><br>";
             echo "<h2 style=  margin-left:440px;>Redirecting you to home page in some seconds! </h2><br>";
-            header("refresh:5;url=../../index.php/.login-form-container");
+            header("refresh:4;url=../../index.php/.login-form-container");
         }
     
     

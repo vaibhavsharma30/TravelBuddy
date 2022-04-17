@@ -120,7 +120,7 @@
             <input type="date" name="date"/>
           </div>
           
-          <input type="submit" class="btn" value="book now" />
+          <input type="submit" class="btn" value="book now" name="submit" />
         </form>
       </div>
     </section>

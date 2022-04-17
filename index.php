@@ -46,7 +46,15 @@
         <i class="fas fa-search" id="search-btn"></i>
         <i class="fas fa-grip-lines-vertical"></i>
         
-        <i class="fas fa-user" id="login-btn"> &nbsp Login</i>
+        <i class="fas fa-user" id="login-btn"> <?php
+        if(isset($_SESSION['uname'])){
+          echo  $_SESSION['uname'];
+        }
+        else{
+          echo "&nbsp Login";
+        }
+        
+        ?></i>
         
       </div>
 
@@ -412,4 +420,4 @@
     <!-- custom js file link  -->
     <script src="../js/script.js"></script>
 </body>
-</html>
+</html> 
